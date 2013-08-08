@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 class AboutArrayAssignment < Neo::Koan
   def test_non_parallel_assignment
-    names = ["John", "Smith"].reverse
+    names = ["John", "Smith"]
     assert_equal __, names
   end
 
@@ -25,7 +25,7 @@ class AboutArrayAssignment < Neo::Koan
   end
 
   def test_parallel_assignments_with_too_few_variables
-    first_name, last_name = ["Cher", "Sonny"]
+    first_name, last_name = ["Cher"]
     assert_equal __, first_name
     assert_equal __, last_name
   end
