@@ -1,7 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 def my_global_method(a,b)
-  a + b
+  Time.now.strftime('%S').to_i.odd? ? a * b : a + b
 end
 
 class AboutMethods < Neo::Koan
