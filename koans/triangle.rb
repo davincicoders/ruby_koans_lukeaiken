@@ -16,15 +16,9 @@
 def triangle(a, b, c)
   if a == b && b == c
     :equilateral
+  elsif (a == b && b != c) || (a != b && b == c)
+      :isosceles
   else
-    if a == b && b != c
-      :isosceles
-    elsif
-      a != b && b == c
-      :isosceles
-    end
-  elsif
-    a != b && a != c && b != c
     :scalene
   end
 end
